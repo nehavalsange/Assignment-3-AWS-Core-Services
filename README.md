@@ -109,6 +109,8 @@ The crawler will scan your processed data and create a data catalog, making it q
 6.  **Output**: Click **Add database** and create a new database named `orders_db`.
 7.  Finish the setup and run the crawler. It will create a new table in your `orders_db` database.
 
+<img width="1919" height="1136" alt="image" src="https://github.com/user-attachments/assets/950b7d2c-a581-47d5-8934-46b6e263c7f3" />
+
 ---
 
 ## 6. Query Data with Amazon Athena 🔍
