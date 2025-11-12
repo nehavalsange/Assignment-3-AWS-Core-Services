@@ -30,6 +30,9 @@ Create the following IAM roles to grant AWS services the necessary permissions t
     * `AmazonS3FullAccess`
 5.  Give the role a descriptive name (e.g., `Lambda-S3-Processing-Role`) and create it.
 
+<img width="1919" height="1143" alt="image" src="https://github.com/user-attachments/assets/089c5f8d-4fa8-4875-8590-9e59c480a480" />
+
+
 ### Glue Service Role
 
 1.  Create another IAM role for **AWS service** with the use case **Glue**.
