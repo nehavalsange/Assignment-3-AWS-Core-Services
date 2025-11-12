@@ -42,6 +42,8 @@ Create the following IAM roles to grant AWS services the necessary permissions t
     * `AWSGlueServiceRole`
 3.  Name the role (e.g., `Glue-S3-Crawler-Role`) and create it.
 
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/91f94eb0-25a9-4e64-ad17-abedc5ff5ebb" />
+
 ### EC2 Instance Profile
 
 1.  Create a final IAM role for **AWS service** with the use case **EC2**.
@@ -49,6 +51,8 @@ Create the following IAM roles to grant AWS services the necessary permissions t
     * `AmazonS3FullAccess`
     * `AmazonAthenaFullAccess`
 3.  Name the role (e.g., `EC2-Athena-Dashboard-Role`) and create it.
+
+<img width="1919" height="1140" alt="image" src="https://github.com/user-attachments/assets/8c08d3f2-15ff-48c7-b93b-bc86570f071d" />
 
 ---
 
