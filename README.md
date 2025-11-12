@@ -69,6 +69,13 @@ This function will automatically process files uploaded to the `raw/` S3 folder.
 7.  Click **Create function**.
 8.  In the **Code source** editor, replace the default code with LambdaFunction.py code for processing the raw data.
 
+
+<img width="975" height="580" alt="image" src="https://github.com/user-attachments/assets/79c138ea-1c0a-4c08-bc32-eba16391b273" />
+
+<img width="975" height="580" alt="image" src="https://github.com/user-attachments/assets/2c7b87d7-8fd7-42a8-a54f-79ce1ace0d2a" />
+
+
+
 ---
 
 ## 4. Configure the S3 Trigger ⚡
@@ -82,6 +89,9 @@ Set up the S3 trigger to invoke your Lambda function automatically.
 5.  **Prefix (Required)**: Enter `raw/`. This ensures the function only triggers for files in this folder.
 6.  **Suffix (Recommended)**: Enter `.csv`.
 7.  Check the acknowledgment box and click **Add**.
+
+<img width="975" height="579" alt="image" src="https://github.com/user-attachments/assets/e84375d5-4ddb-4d11-9bbe-7550738931aa" />
+
 
 --- 
 **Start Processing of Raw Data**: Now upload the Orders.csv file into the `raw/` folder of the S3 Bucket. This will automatically trigger the Lambda function.
