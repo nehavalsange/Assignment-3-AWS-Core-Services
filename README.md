@@ -198,6 +198,8 @@ This instance will host a simple web page to display the Athena query results.
 7.  **Advanced details**: Scroll down and for **IAM instance profile**, select the **EC2 Instance Profile** you created.
 8.  Click **Launch instance**.
 
+<img width="975" height="584" alt="image" src="https://github.com/user-attachments/assets/12a42a81-13d2-4a4f-badf-2ced7ad54f2f" />
+
 ---
 
 ## 8. Connect to Your EC2 Instance
