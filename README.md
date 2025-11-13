@@ -127,10 +127,56 @@ Navigate to the **Athena** service. Ensure your data source is set to `AwsDataCa
 
 **Queries to be executed:**
 * **Total Sales by Customer**: Calculate the total amount spent by each customer.
+  ```
+  SELECT customer,
+       SUM(amount) AS total_sales
+   FROM processed
+   GROUP BY customer
+   ORDER BY total_sales DESC;
+  ```
 * **Monthly Order Volume and Revenue**: Aggregate the number of orders and total revenue per month.
+  ```
+   SELECT date_format(CAST(orderdate AS DATE), '%Y-%m') AS month,
+       COUNT(*) AS total_orders,
+       SUM(amount) AS total_revenue
+   FROM processed
+   GROUP BY date_format(CAST(orderdate AS DATE), '%Y-%m')
+   ORDER BY month;
+
+  ```
 * **Order Status Dashboard**: Summarize orders based on their status (`shipped` vs. `confirmed`).
+  ```
+   SELECT status,
+       COUNT(*) AS order_count,
+       SUM(amount) AS total_amount
+   FROM processed
+   GROUP BY status
+   ORDER BY order_count DESC;
+  ```
 * **Average Order Value (AOV) per Customer**: Find the average amount spent per order for each customer.
+  ```
+   SELECT customer,
+       AVG(amount) AS average_order_value
+   FROM processed
+   GROUP BY customer
+   ORDER BY average_order_value DESC;
+  ```
 * **Top 10 Largest Orders in February 2025**: Retrieve the highest-value orders from a specific month.
+  ```
+   SELECT *
+   FROM processed
+   WHERE date_format(CAST(orderdate AS DATE), '%Y-%m') = '2025-02'
+   ORDER BY amount DESC
+   LIMIT 10;
+
+  ```
+
+
+
+<img width="1919" height="1142" alt="image" src="https://github.com/user-attachments/assets/7efe6e56-e570-41e3-b409-1cb59ca4a641" />
+
+<img width="1919" height="1139" alt="image" src="https://github.com/user-attachments/assets/d88ee0db-8df0-407f-8e9f-fdb54814a2b2" />
+
 
 ---
 
