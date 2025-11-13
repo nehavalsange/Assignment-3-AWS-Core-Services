@@ -255,11 +255,20 @@ Once connected via SSH, run the following commands to install the necessary soft
     ```
     You should see a message like `* Running on http://0.0.0.0:5000/`.
 
-2.  Open a web browser and navigate to your instance's public IP address on port 5000:
+    <img width="1724" height="917" alt="image" src="https://github.com/user-attachments/assets/66148b83-2241-4ef7-8127-df31f32c3f06" />
+
+
+3.  Open a web browser and navigate to your instance's public IP address on port 5000:
     ```
     http://YOUR_PUBLIC_IP_ADDRESS:5000
     ```
     You should now see your Athena Orders Dashboard!
+
+<img width="1919" height="1141" alt="image" src="https://github.com/user-attachments/assets/a7c7cc8b-2b2c-46ca-8c05-2b0e1becc065" />
+
+<img width="1919" height="1135" alt="image" src="https://github.com/user-attachments/assets/30e065a6-a6c7-4179-bed2-0e6603b2a3c5" />
+
+<img width="1919" height="1148" alt="image" src="https://github.com/user-attachments/assets/b5edf8cf-350f-4f9b-a456-0cc51267d6b0" />
 
 ---
 
